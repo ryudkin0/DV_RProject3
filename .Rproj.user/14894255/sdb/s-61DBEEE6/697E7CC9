@@ -1,0 +1,16 @@
+{
+    "contents" : "VIS1 <- DATA1 %>% ggplot(aes(x= UNEMPLOYMENT_RATE, y = AVG_FICO))+geom_point(aes(color=STATE))+ geom_text(aes(label=STATE, hjust=1.5), size=3);VIS1\n\n#Add and Format Title\nVIS1 <- VIS1 +ggtitle('Unemployment Rate vs. Fico Score') +\n  theme(plot.title=element_text(size=18, face=\"bold\", vjust=2)); VIS1\n#Format Axis labels\nVIS1 <- VIS1 + labs(x=\"Unemployment Rate (%)\", y=paste(\"FICO Score\")) + theme(\n  axis.title.x=element_text(face=\"bold\", vjust=0.35),\n  axis.title.y=element_text(face=\"bold\", vjust=0.35)); VIS1\n#Basic Formatting\nVIS1 <- VIS1 + theme(panel.background = element_rect(fill = 'grey92',color = 'grey1')) + theme(legend.position='none'); VIS1\n\nCORR <- cor(DATA1[,2:3])\nprint(paste(\"Correlation of average state unemployment rate and credit score from our MBS sample is \",round(CORR[1,2],digits = 3)))\n\n\n",
+    "created" : 1425483044162.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3750987520",
+    "id" : "697E7CC9",
+    "lastKnownWriteTime" : 1425482241,
+    "path" : "~/Documents/UT/Semester8/DataVisualization/DV_RProject3/03 Visualizations/DataWrangling1 - Visualization.R",
+    "project_path" : "03 Visualizations/DataWrangling1 - Visualization.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

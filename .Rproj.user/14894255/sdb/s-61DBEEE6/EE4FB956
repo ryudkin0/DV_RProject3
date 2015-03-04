@@ -1,0 +1,16 @@
+{
+    "contents" : "DATA3 <- MBSALLDF %>% mutate(RATE_DIST = cume_dist(ORIG_RATE)) %>% filter(RATE_DIST >= .5) %>% \n  arrange(RATE_DIST) %>% left_join(UNEMPLOYMENTDF,by = 'STATE') %>% \n  select(STATE,INTEREST_RATE = ORIG_RATE,UNEMPLOYMENT_RATE) %>% tbl_df %>%\n  group_by(STATE) %>% summarise(INTEREST_RATE_AVG = mean(INTEREST_RATE),UNEMPLOYMENT_RATE_AVG = mean(UNEMPLOYMENT_RATE))\n  \n  \n",
+    "created" : 1425482999457.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3493203808",
+    "id" : "EE4FB956",
+    "lastKnownWriteTime" : 1425479713,
+    "path" : "~/Documents/UT/Semester8/DataVisualization/DV_RProject3/02 Data Wrangling/DataWrangling3 - chart.R",
+    "project_path" : "02 Data Wrangling/DataWrangling3 - chart.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "VIS3 <- DATA3 %>% ggplot(aes(x = UNEMPLOYMENT_RATE_AVG, y = INTEREST_RATE_AVG))+\n  geom_point(aes(color=STATE))+ geom_text(aes(label=STATE, hjust=1.5), size=3); VIS3\n\n#Add and Format Title\nVIS3 <- VIS3 +ggtitle('Unemployment Rate vs. Average Interest Rate') +\n  theme(plot.title=element_text(size=18, face=\"bold\", vjust=2)); VIS3\n#Format Axis labels\nVIS3 <- VIS3 + labs(x=\"Unemployment Rate (%)\", y=paste(\" Average Interest Rate (%)\")) + theme(\n  axis.title.x=element_text(face=\"bold\", vjust=0.35),\n  axis.title.y=element_text(face=\"bold\", vjust=0.35)); VIS3\n#Basic Formatting\nVIS3 <- VIS3 + theme(panel.background = element_rect(fill = 'grey92',color = 'grey1')) + theme(legend.position='none'); VIS3\n\n\n\n\nCORR3 <- cor(DATA1[,2:3])\n\nVIS3\nprint(paste(\"Correlation of average state unemployment rate and average interest rate from our MBS sample is \",round(CORR3[1,2],digits = 3)))\nprint('This is a very weak correlation')\n\n\n",
+    "created" : 1425483003982.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4003890225",
+    "id" : "5216A35A",
+    "lastKnownWriteTime" : 1425483161,
+    "path" : "~/Documents/UT/Semester8/DataVisualization/DV_RProject3/03 Visualizations/DataWrangling3 - Visualization.R",
+    "project_path" : "03 Visualizations/DataWrangling3 - Visualization.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
