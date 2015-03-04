@@ -1,0 +1,16 @@
+{
+    "contents" : "library(\"bitops\")\nlibrary(\"RCurl\")\nlibrary(\"ggplot2\")\nlibrary(\"plyr\")\nlibrary(\"tidyr\")\nlibrary(\"dplyr\")\nlibrary(\"jsonlite\")\n\n#install.packages(\"devtools\")\n#devtools::install_github(\"rstudio/EDAWR\")\nrequire(EDAWR)\n",
+    "created" : 1425439175401.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "902167672",
+    "id" : "C7364437",
+    "lastKnownWriteTime" : 1425439059,
+    "path" : "C:/Users/Ross/Google Drive/docs/UT/Spring 2015/DataVisualization/DV_RProject3/01 Data/Load_Packages.R",
+    "project_path" : "01 Data/Load_Packages.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
