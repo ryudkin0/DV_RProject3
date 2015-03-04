@@ -21,7 +21,7 @@ for (i in names(MBSALLDF)) {
   }
 }
 
-png("C:/Users/Ross/Google Drive/docs/UT/Spring 2015/DataVisualization/DV_RProject3/00 Doc/categoricals.png", width = 25, height = 10, units = "in", res = 72)
+png("../00 Doc/categoricals.png", width = 25, height = 10, units = "in", res = 72)
 grid.newpage()
 pushViewport(viewport(layout = grid.layout(1, 12)))   
 
@@ -50,7 +50,7 @@ for (i in names(MBSALLDF)) {
   }
 }
 
-png("C:/Users/Ross/Google Drive/docs/UT/Spring 2015/DataVisualization/DV_RProject3/00 Doc/categoricals2.png", width = 40, height = 20, units = "in", res = 72)
+png("../00 Doc/categoricals2.png", width = 40, height = 20, units = "in", res = 72)
 grid.newpage()
 pushViewport(viewport(layout = grid.layout(2, 28)))   
 
