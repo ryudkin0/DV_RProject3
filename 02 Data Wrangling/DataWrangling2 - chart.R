@@ -11,6 +11,7 @@ DATA2 <- DATA2 %>% group_by(ABOVE_AVG_UNEMPLOYMENT) %>%
 DATA2[1,1] <- 'State Unemployment <= 4.45%'
 DATA2[2,1] <- 'State Unemployment > 4.45%'
 
+names(DATA2) <- c('ABOVE_AVG_UNEMPLOYMENT','INVESTOR OWNED','OWNER OCCUPIED','SECOND HOME')
 TDATA2 <- DATA2 %>% gather(ABOVE_AVG_UNEMPLOYMENT,value,2,3,4)
 names(TDATA2) <- c('ABOVE_AVG_UNEMPLOYMENT','OCCUPANCY','COUNT')
 
